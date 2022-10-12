@@ -1,6 +1,6 @@
 @import "mixins.scss";
 @import "variables.scss";
-@import "mobile.scss";
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -92,6 +92,16 @@ a {
   width: 97px;
   border-top: 2.5px solid $yellow;
 }
+.header_fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  opacity: 0.99;
+  background-color: $white;
+}
+
 .header-container {
   margin: 0 auto 0 auto;
   @include fontRegular(14px, $black);
@@ -108,13 +118,11 @@ a {
     cursor: pointer;
     height: 19px;
     width: 22px;
+    transition: 0.5s;
   }
-  .nav-toggle-button:hover {
+  .rotate {
     transition: 0.5s;
     transform: rotate(90deg);
-  }
-  .nav-toggle-button:not(:hover) {
-    transition: 0.5s;
   }
   .logo {
     margin: -5px 0 0 0;
@@ -139,6 +147,9 @@ a {
         height: 20px;
       }
     }
+  }
+  .ul-mobile {
+    display: none;
   }
 }
 .main-page {
@@ -448,3 +459,4 @@ a {
     height: 48px;
   }
 }
+@import "mobile.scss";
