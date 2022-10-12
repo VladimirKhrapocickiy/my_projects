@@ -1,4 +1,4 @@
 # nice
-My pet project - landing page html/css/SCSS/JS +mobile +adaptive
+landing page html/css/SCSS/JS(vanila+jquery) desctop+mobile 
 
-https://htmlpreview.github.io/?https://github.com/VladimirKhrapovickiy/nice/blob/main/index.html Fast link to preview
+
