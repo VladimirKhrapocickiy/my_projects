@@ -1,7 +1,7 @@
-$(function () {
+$(document).ready(function () {
   const header = $("header");
   const hederHeight = header.height();
-  console.log(hederHeight)
+  console.log(hederHeight);
   $(".nav-mobile").css({
     marginTop: hederHeight - 1 + "px",
   });
